@@ -1,0 +1,9 @@
+resource "docker_container" "mysql_container" {
+  name  = var.container_name
+  image = "${docker_image.mysql_image.latest}"
+
+}
+
+export MYSQL_ROOT_PASSWOR= var.mysql_root_password
+
+
